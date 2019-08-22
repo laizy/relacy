@@ -49,7 +49,7 @@ struct fence_synch_test : rl::test_suite<fence_synch_test<index, mo_index>, 2>
         }
     }
 
-    std::pair<std::memory_order, std::memory_order> order()
+    std::pair<std::mem_order, std::mem_order> order()
     {
         switch (mo_index)
         {

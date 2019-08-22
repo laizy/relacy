@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="front-end">
+      <UniqueIdentifier>{b074807b-aa65-4438-8128-caf8dac75232}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="scheduler">
+      <UniqueIdentifier>{5c9a9015-9099-4b84-b685-5ac91d6a8e80}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="base">
+      <UniqueIdentifier>{5eec8dd7-b126-4e01-b4df-342ea16cb67e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="stdlib">
+      <UniqueIdentifier>{38b58abd-9407-4c16-b67a-90ba69ade6e6}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\relacy\atomic.hpp">
+      <Filter>front-end</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\relacy\atomic_events.hpp">
+      <Filter>front-end</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\relacy\atomic_fence.hpp">
+      <Filter>front-end</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\relacy\backoff.hpp">
+      <Filter>front-end</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\relacy\cli.hpp">
+      <Filter>front-end</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\relacy\cli_interlocked.hpp">
+      <Filter>front-end</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\relacy\cli_var.hpp">
+      <Filter>front-end</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\relacy\cli_volatile.hpp">
+      <Filter>front-end</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\relacy\java.hpp">
+      <Filter>front-end</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\relacy\java_atomic.hpp">
+      <Filter>front-end</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\relacy\java_var.hpp">
+      <Filter>front-end</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\relacy\java_volatile.hpp">
+      <Filter>front-end</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\relacy\var.hpp">
+      <Filter>front-end</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\relacy\volatile.hpp">
+      <Filter>front-end</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\relacy\context_bound_scheduler.hpp">
+      <Filter>scheduler</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\relacy\full_search_scheduler.hpp">
+      <Filter>scheduler</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\relacy\random_scheduler.hpp">
+      <Filter>scheduler</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\relacy\scheduler.hpp">
+      <Filter>scheduler</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\relacy\base.hpp">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\relacy\foreach.hpp">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\relacy\pch.hpp">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\relacy\platform.hpp">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\relacy\random.hpp">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\relacy\signature.hpp">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\relacy\stdlib\condition_variable.hpp">
+      <Filter>stdlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\relacy\stdlib\event.hpp">
+      <Filter>stdlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\relacy\stdlib\mutex.hpp">
+      <Filter>stdlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\relacy\stdlib\pthread.hpp">
+      <Filter>stdlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\relacy\stdlib\semaphore.hpp">
+      <Filter>stdlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\relacy\stdlib\windows.hpp">
+      <Filter>stdlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\addr_hash.hpp" />
+    <ClInclude Include="..\..\relacy\context.hpp" />
+    <ClInclude Include="..\..\relacy\context_addr_hash.hpp" />
+    <ClInclude Include="..\..\relacy\context_base.hpp" />
+    <ClInclude Include="..\..\relacy\context_base_impl.hpp" />
+    <ClInclude Include="..\..\relacy\defs.hpp" />
+    <ClInclude Include="..\..\relacy\dyn_thread.hpp" />
+    <ClInclude Include="..\..\relacy\dyn_thread_ctx.hpp" />
+    <ClInclude Include="..\..\relacy\history.hpp" />
+    <ClInclude Include="..\..\relacy\memory.hpp" />
+    <ClInclude Include="..\..\relacy\memory_order.hpp" />
+    <ClInclude Include="..\..\relacy\pthread.h" />
+    <ClInclude Include="..\..\relacy\relacy.hpp" />
+    <ClInclude Include="..\..\relacy\relacy_cli.hpp" />
+    <ClInclude Include="..\..\relacy\relacy_java.hpp" />
+    <ClInclude Include="..\..\relacy\relacy_std.hpp" />
+    <ClInclude Include="..\..\relacy\rmw.hpp" />
+    <ClInclude Include="..\..\relacy\slab_allocator.hpp" />
+    <ClInclude Include="..\..\relacy\sync_var.hpp" />
+    <ClInclude Include="..\..\relacy\test_params.hpp" />
+    <ClInclude Include="..\..\relacy\test_result.hpp" />
+    <ClInclude Include="..\..\relacy\test_suite.hpp" />
+    <ClInclude Include="..\..\relacy\thread.hpp" />
+    <ClInclude Include="..\..\relacy\thread_base.hpp" />
+    <ClInclude Include="..\..\relacy\thread_local.hpp" />
+    <ClInclude Include="..\..\relacy\thread_local_ctx.hpp" />
+    <ClInclude Include="..\..\relacy\waitset.hpp" />
+    <ClInclude Include="..\..\relacy\windows.h" />
+  </ItemGroup>
+</Project>

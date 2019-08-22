@@ -20,6 +20,7 @@
 #include "windows.hpp"
 #include "addr_hash.hpp"
 #include "futex.hpp"
+#include "mytest.hpp"
 
 #include "../relacy/windows.h"
 #include "../relacy/pthread.h"
@@ -376,6 +377,7 @@ int main()
     rl::simulate_f tests[] = 
     {
 #if 1
+        &rl::simulate<mutex_test>,
         &rl::simulate<test_FlushProcessWriteBuffers>,
 
         &rl::simulate<test_addr_hash>,

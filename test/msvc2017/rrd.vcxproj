@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{D4F501D0-382D-4CBC-86F4-56181F383444}</ProjectGuid>
+    <RootNamespace>rrd</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.16299.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>15.0.27130.2010</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>$(SolutionDir)$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>$(SolutionDir)$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <TargetEnvironment>X64</TargetEnvironment>
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <TargetEnvironment>X64</TargetEnvironment>
+    </Midl>
+    <ClCompile>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\relacy\atomic.hpp" />
+    <ClInclude Include="..\..\relacy\atomic_events.hpp" />
+    <ClInclude Include="..\..\relacy\atomic_fence.hpp" />
+    <ClInclude Include="..\..\relacy\backoff.hpp" />
+    <ClInclude Include="..\..\relacy\base.hpp" />
+    <ClInclude Include="..\..\relacy\cli.hpp" />
+    <ClInclude Include="..\..\relacy\cli_interlocked.hpp" />
+    <ClInclude Include="..\..\relacy\cli_var.hpp" />
+    <ClInclude Include="..\..\relacy\cli_volatile.hpp" />
+    <ClInclude Include="..\..\relacy\context.hpp" />
+    <ClInclude Include="..\..\relacy\context_addr_hash.hpp" />
+    <ClInclude Include="..\..\relacy\context_base.hpp" />
+    <ClInclude Include="..\..\relacy\context_base_impl.hpp" />
+    <ClInclude Include="..\..\relacy\context_bound_scheduler.hpp" />
+    <ClInclude Include="..\..\relacy\defs.hpp" />
+    <ClInclude Include="..\..\relacy\dyn_thread.hpp" />
+    <ClInclude Include="..\..\relacy\dyn_thread_ctx.hpp" />
+    <ClInclude Include="..\..\relacy\foreach.hpp" />
+    <ClInclude Include="..\..\relacy\full_search_scheduler.hpp" />
+    <ClInclude Include="..\..\relacy\history.hpp" />
+    <ClInclude Include="..\..\relacy\java.hpp" />
+    <ClInclude Include="..\..\relacy\java_atomic.hpp" />
+    <ClInclude Include="..\..\relacy\java_var.hpp" />
+    <ClInclude Include="..\..\relacy\java_volatile.hpp" />
+    <ClInclude Include="..\..\relacy\memory.hpp" />
+    <ClInclude Include="..\..\relacy\memory_order.hpp" />
+    <ClInclude Include="..\..\relacy\pch.hpp" />
+    <ClInclude Include="..\..\relacy\platform.hpp" />
+    <ClInclude Include="..\..\relacy\pthread.h" />
+    <ClInclude Include="..\..\relacy\random.hpp" />
+    <ClInclude Include="..\..\relacy\random_scheduler.hpp" />
+    <ClInclude Include="..\..\relacy\relacy.hpp" />
+    <ClInclude Include="..\..\relacy\relacy_cli.hpp" />
+    <ClInclude Include="..\..\relacy\relacy_java.hpp" />
+    <ClInclude Include="..\..\relacy\relacy_std.hpp" />
+    <ClInclude Include="..\..\relacy\rmw.hpp" />
+    <ClInclude Include="..\..\relacy\scheduler.hpp" />
+    <ClInclude Include="..\..\relacy\signature.hpp" />
+    <ClInclude Include="..\..\relacy\slab_allocator.hpp" />
+    <ClInclude Include="..\..\relacy\stdlib\condition_variable.hpp" />
+    <ClInclude Include="..\..\relacy\stdlib\event.hpp" />
+    <ClInclude Include="..\..\relacy\stdlib\mutex.hpp" />
+    <ClInclude Include="..\..\relacy\stdlib\pthread.hpp" />
+    <ClInclude Include="..\..\relacy\stdlib\semaphore.hpp" />
+    <ClInclude Include="..\..\relacy\stdlib\windows.hpp" />
+    <ClInclude Include="..\..\relacy\sync_var.hpp" />
+    <ClInclude Include="..\..\relacy\test_params.hpp" />
+    <ClInclude Include="..\..\relacy\test_result.hpp" />
+    <ClInclude Include="..\..\relacy\test_suite.hpp" />
+    <ClInclude Include="..\..\relacy\thread.hpp" />
+    <ClInclude Include="..\..\relacy\thread_base.hpp" />
+    <ClInclude Include="..\..\relacy\thread_local.hpp" />
+    <ClInclude Include="..\..\relacy\thread_local_ctx.hpp" />
+    <ClInclude Include="..\..\relacy\var.hpp" />
+    <ClInclude Include="..\..\relacy\volatile.hpp" />
+    <ClInclude Include="..\..\relacy\waitset.hpp" />
+    <ClInclude Include="..\..\relacy\windows.h" />
+    <ClInclude Include="..\addr_hash.hpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
